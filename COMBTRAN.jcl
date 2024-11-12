@@ -23,12 +23,9 @@
 //SORTIN   DD DISP=SHR,                                                         
 //         DSN=AWS.M2.CARDDEMO.TRANSACT.BKUP(0)                                
 //         DD DISP=SHR,
-//         DSN=AWS.M2.CARDDEMO.SYSTRAN(0)                                
-//SYMNAMES DD *                                                                 
-TRAN-ID,1,16,CH                                                         
-//SYSIN    DD *                                                                 
- SORT FIELDS=(TRAN-ID,A)                                                  
-/*                                                                              
+//         DSN=AWS.M2.CARDDEMO.SYSTRAN(0)                                                                                       
+//SYSIN DD DISP=SHR,                                                         
+//         DSN=AWS.M2.CARDDEMO.TRANSACT.COMBINED                                                                          
 //SYSOUT   DD SYSOUT=*                                                          
 //SORTOUT  DD DISP=(NEW,CATLG,DELETE),                                          
 //         UNIT=SYSDA,                                                          
