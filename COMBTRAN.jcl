@@ -35,7 +35,7 @@
 //* *******************************************************************         
 //* Load combined file to transaction master
 //* *******************************************************************         
-//STEP10 EXEC PGM=IDCAMS                                                        
+//STEP10 EXEC PROC=IDCAMS                                                        
 //SYSPRINT DD   SYSOUT=*                                                        
 //TRANSACT DD DISP=SHR,                                                         
 //         DSN=AWS.M2.CARDDEMO.TRANSACT.COMBINED(+1)                            
